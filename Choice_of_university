@@ -1,0 +1,45 @@
+print("Welcome to the program that will help you choose a field of study based on the size of the city, interests or "
+      "dream profession!")
+print("Answer a few questions and we will try to help you choose.")
+
+city = input("What size city would you like to study in (small/medium/large)? ")
+interests = input("What are your current interests? ")
+occupation = input("What job would you like to do in the future? ")
+
+if city == "small":
+    if "programming" in interests.lower() or "IT" in interests.lower():
+        if occupation.lower() == "programmer" or occupation.lower() == "IT specialist":
+            print("How about a computer science major at the following universities: Akademia Bialska Nauk Stosowanych "
+                  "im. Jana Pawła II or Akademia Nauk Stosowanych in Nowy Sacz?")
+    elif "economy" in interests.lower() or "accountancy" in interests.lower():
+        if occupation.lower() == "economist" or occupation.lower() == "accountant":
+            print("How about a computer science major at the following universities: Uniwersytet "
+                  "Technologiczno-Humanistyczny im. Kazimierza Pułaskiego in Radom or Powiślańska Szkoła Wyższa?")
+    else:
+        print("Hmmm... I guess I haven't found the right university for you.")
+
+elif city == "medium":
+    if "history" in interests.lower():
+        if occupation.lower() == "historian" or occupation.lower() == "archaeologist":
+            print("How about a computer science major at the following universities: University of Bialystok or "
+                  "Uniwersytet Humanistyczno - Przyrodniczy im. Jana Długosza in Czestochowa?")
+    elif "sport" in interests.lower():
+        if occupation.lower() == "athlete" or occupation.lower() == "PE teacher":
+            print("How about a computer science major at the following universities: Akademia Wychowania "
+                  "Fizycznego im.Eugeniusza Piaseckiego in Poznan – Branch in Gorzów Wielkopolski or Akademia "
+                  "Kaliska im. Prezydenta Stanisława Wojciechowskiego?")
+    else:
+        print("Hmmm... I guess I haven't found the right university for you.")
+
+elif city == "large":
+    if "medicine" in interests.lower() and occupation.lower() == "doctor":
+        print("How about a computer science major at the following universities: Warszawski Uniwersytet Medyczny or "
+              "Uniwersytet Jagielloński Collegium Medicum?")
+    elif "law" in interests.lower() and occupation.lower() == "lawyer":
+        print("How about a computer science major at the following universities: University of Warsaw or "
+              "University of Gdansk?")
+    else:
+        print("HHmmm... I guess I haven't found the right university for you.")
+
+else:
+    print("Hmmm... I guess I haven't found the right university for you.")
