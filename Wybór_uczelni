@@ -2,13 +2,9 @@ print("Witaj w programie, który pomoże Ci wybrać kierunek studiów w oparciu 
       "wymarzony zawód!")
 print("Odpowiedz na kilka pytań, a postaramy się pomóc w wyborze.")
 
-# Kryteria wyboru uczelni: miasto, zainteresowania i wymarzony zawód
-
 miasto = input("W jakim pod względem wielkości mieście chciałbyś studiować? (małe/średnie/duże) ")
 zainteresowania = input("Jakie są Twoje aktualne zainteresowania? ")
 zawod = input("Jaki zawód chciałbyś wykonywać w przyszłości? ")
-
-# Wybór kierunku w oparciu o małe miasto
 
 if miasto == "małe":
     if "programowanie" in zainteresowania.lower() or "informatyka" in zainteresowania.lower():
@@ -22,8 +18,6 @@ if miasto == "małe":
     else:
         print("Hmmm... chyba nie znalazłem dla Ciebie odpowiedniej uczelni.")
 
-# Wybór kierunku w oparciu o średnie miasto
-
 elif miasto == "średnie":
     if "historia" in zainteresowania.lower():
         if zawod.lower() == "historyk" or zawod.lower() == "archeolog":
@@ -36,8 +30,6 @@ elif miasto == "średnie":
                   "Kaliska im. Prezydenta Stanisława Wojciechowskiego?")
     else:
         print("Hmmm... chyba nie znalazłem dla Ciebie odpowiedniej uczelni.")
-
-# Wybór kierunku w oparciu o duże miasto
 
 elif miasto == "duże":
     if "medycyna" in zainteresowania.lower() and zawod.lower() == "lekarz":
