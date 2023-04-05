@@ -1,10 +1,16 @@
 print("Welcome to the program that will help you choose a field of study based on the size of the city, interests or "
       "dream profession!")
+print("")
+
 print("Answer a few questions and we will try to help you choose.")
+print("")
 
 city = input("What size city would you like to study in (small/medium/large)? ")
+print("")
 interests = input("What are your current interests? ")
+print("")
 occupation = input("What job would you like to do in the future? ")
+print("")
 
 if city == "small":
     if "programming" in interests.lower() or "IT" in interests.lower():
